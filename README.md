@@ -11,11 +11,11 @@ HIGH LEVEL SYSTEM DESIGN: <br/>
 
 PROPOSED METHODOLOGY: <br/>
 GAN Model:
-GAN or Generative Adversarial Networks is used to increase the dataset size and thereby increase the accuracy of the model. In this project, a hybrid of both DCGAN and Conditional GAN is used to generate realistic images that closely resemble the original dataset. 
+GAN or Generative Adversarial Networks is used to increase the dataset size and thereby increase the accuracy of the model. In this project, a hybrid of both DCGAN and Conditional GAN is used to generate realistic images that closely resemble the original dataset. <br/>
 Segmentation:
-Since the input image will have a lot of background noise, it makes it harder for the model to accurately classify the image as the model is trained on lab images. Hence, for the model to work on images of all sorts, a segmentation UNET model is used to accurately highlight only the diseased leaf part making it easier for the CNN model to classify accurately.
+Since the input image will have a lot of background noise, it makes it harder for the model to accurately classify the image as the model is trained on lab images. Hence, for the model to work on images of all sorts, a segmentation UNET model is used to accurately highlight only the diseased leaf part making it easier for the CNN model to classify accurately. <br/>
 CNN Model:
-After the UNET model accurately segments the inputted image, the CNN model classifies the image as healthy or unhealthy, and if unhealthy it also mentions the diseased class name.
+After the UNET model accurately segments the inputted image, the CNN model classifies the image as healthy or unhealthy, and if unhealthy it also mentions the diseased class name. <br/>
 ![image](https://github.com/user-attachments/assets/a05a52be-2a51-4491-ae90-0fd49451b598)
 
 RESULTS: <br/>
